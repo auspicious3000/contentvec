@@ -7,7 +7,7 @@ This is a short video that explains the main concepts of our work. If you find t
 [![ContentVec](./assets/cover.png)](https://youtu.be/wow2DRuJ69c/)
 
 
-## Pre-trained models 
+## Pre-trained models (There are issues with the download link, we will fix it ASAP. For now, please send emails to request pretrained models.)
 |Model | Classes |  |
 |---|---|---|
 |ContentVec_legacy | 100 | [download](https://ibm.box.com/s/0moa6xqexvphmkpnaabk9sg3fwxfh4ly)

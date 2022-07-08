@@ -4,19 +4,21 @@ This repository provides the official PyTorch implementation of [ContentVec](htt
 
 This is a short video that explains the main concepts of our work. If you find this work useful and use it in your research, please consider citing our paper.
 
-[![ContentVec](./assets/cover.png)](https://youtu.be/wow2DRuJ69c/)
+[![ContentVec](./assets/cover.png)](https://youtu.be/aiGp1g-dCY4)
 
 
-## Pre-trained models (There are issues with the download link, we will fix it ASAP. For now, please send emails to request pretrained models.)
+## Pre-trained models
+The legacy model only contains the representation module, which may be loaded using plain fairseq installation without setting up this code repo.
+
 |Model | Classes |  |
 |---|---|---|
-|ContentVec_legacy | 100 | [download](https://ibm.box.com/s/0moa6xqexvphmkpnaabk9sg3fwxfh4ly)
-|ContentVec | 100 | [download](https://ibm.box.com/s/vy3mmba6kdhbg0jdvq1uqluynpmcfpsy)
-|ContentVec_legacy | 500 | [download](https://ibm.box.com/s/r9ex6xjoaeesd8xfttm4kvccvnn529uw)
-|ContentVec | 500 | [download](https://ibm.box.com/s/mbj6p8ruv14xbkbcoqlwdus7rpx9p6pp)
+|ContentVec_legacy | 100 | [download](https://ibm.box.com/s/t76fff0dciyjqt1db03y48323qp99bg9)
+|ContentVec | 100 | [download](https://ibm.box.com/s/oxly542k5v3bhkfw6g8esatxziarymam)
+|ContentVec_legacy | 500 | [download](https://ibm.box.com/s/z1wgl1stco8ffooyatzdwsqn2psd9lrr)
+|ContentVec | 500 | [download](https://ibm.box.com/s/nv35hsry0v2y595etzysgnn2amsxxb0u)
 
 
-## Load a model without setting up code repo
+## Load a model
 ```
 ckpt_path = "/path/to/the/checkpoint_best_legacy.pt"
 models, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([ckpt_path])

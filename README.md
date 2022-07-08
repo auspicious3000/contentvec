@@ -28,7 +28,7 @@ model = models[0]
 
 ## Train a new model
 ### Data preparation
-Download the [zip file](https://ibm.box.com/s/3snda5zxz9o0tjw8vc072hykqxtub3nm) consisting of the following files:
+Download the [zip file](https://ibm.box.com/s/zeyr94mkfs2g896oug31ml0gxv5ny43y) consisting of the following files:
 - `{train,valid}.tsv` waveform list files in metadata
 - `{train,valid}.km` frame-aligned pseudo label files in labels
 - `dict.km.txt` a dummy dictionary in labels

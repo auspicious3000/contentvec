@@ -6,6 +6,9 @@ This is a short video that explains the main concepts of our work. If you find t
 
 [![ContentVec](./assets/cover.png)](https://youtu.be/aiGp1g-dCY4)
 
+## Cite this paper
+https://proceedings.mlr.press/v162/qian22b.html
+
 
 ## Pre-trained models
 The legacy model only contains the representation module, which may be loaded using plain fairseq installation without setting up this code repo.

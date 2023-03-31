@@ -27,6 +27,7 @@ ckpt_path = "/path/to/the/checkpoint_best_legacy.pt"
 models, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([ckpt_path])
 model = models[0]
 ```
+For detailed feature extraction steps, please refer to [Hubert](https://github.com/facebookresearch/fairseq/blob/main/examples/hubert/simple_kmeans/dump_hubert_feature.py).
 
 
 ## Train a new model

@@ -12,10 +12,13 @@ from .character_token_embedder import CharacterTokenEmbedder
 from .conv_tbc import ConvTBC
 from .cross_entropy import cross_entropy
 from .downsampled_multihead_attention import DownsampledMultiHeadAttention
-from .dynamic_convolution import DynamicConv, DynamicConv1dTBC
+from .dynamic_convolution import DynamicConv, DynamicConv1dTBC, DynamicConv_scripatable
 from .dynamic_crf_layer import DynamicCRF
+from .ema_module import EMAModuleConfig, EMAModule
 from .fairseq_dropout import FairseqDropout
+from .fp32_batch_norm import Fp32BatchNorm
 from .fp32_group_norm import Fp32GroupNorm, GroupNormMasked
+from .fp32_instance_norm import Fp32InstanceNorm
 from .gelu import gelu, gelu_accurate
 from .grad_multiply import GradMultiply
 from .gumbel_vector_quantizer import GumbelVectorQuantizer
@@ -30,7 +33,7 @@ from .location_attention import LocationAttention
 from .lstm_cell_with_zoneout import LSTMCellWithZoneOut
 from .multihead_attention import MultiheadAttention
 from .positional_embedding import PositionalEmbedding
-from .same_pad import SamePad
+from .same_pad import SamePad, SamePad2d
 from .scalar_bias import ScalarBias
 from .sinusoidal_positional_embedding import SinusoidalPositionalEmbedding
 from .transformer_sentence_encoder_layer import TransformerSentenceEncoderLayer
@@ -39,6 +42,15 @@ from .transpose_last import TransposeLast
 from .unfold import unfold1d
 from .transformer_layer import TransformerDecoderLayer, TransformerEncoderLayer
 from .vggblock import VGGBlock
+from .espnet_multihead_attention import (
+    ESPNETMultiHeadedAttention,
+    RelPositionMultiHeadedAttention,
+    RotaryPositionMultiHeadedAttention,
+)
+from .rotary_positional_embedding import RotaryPositionalEmbedding
+from .positional_encoding import (
+    RelPositionalEncoding,
+)
 
 __all__ = [
     "AdaptiveInput",
@@ -51,10 +63,15 @@ __all__ = [
     "DownsampledMultiHeadAttention",
     "DynamicConv1dTBC",
     "DynamicConv",
+    "DynamicConv_scripatable",
     "DynamicCRF",
+    "EMAModule",
+    "EMAModuleConfig",
     "FairseqDropout",
+    "Fp32BatchNorm",
     "Fp32GroupNorm",
     "Fp32LayerNorm",
+    "Fp32InstanceNorm",
     "gelu",
     "gelu_accurate",
     "GradMultiply",
@@ -73,6 +90,7 @@ __all__ = [
     "MultiheadAttention",
     "PositionalEmbedding",
     "SamePad",
+    "SamePad2d",
     "ScalarBias",
     "SinusoidalPositionalEmbedding",
     "TransformerSentenceEncoderLayer",
@@ -82,4 +100,10 @@ __all__ = [
     "TransposeLast",
     "VGGBlock",
     "unfold1d",
+    "ESPNETMultiheadedAttention",
+    "PositionalEmbedding",
+    "RelPositionMultiHeadedAttention",
+    "RelPositionalEncoding",
+    "RotaryPositionalEmbedding",
+    "RotaryPositionMultiHeadedAttention",
 ]

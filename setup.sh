@@ -28,7 +28,7 @@ if [ $stage -le 1 ] && [ $stop_stage -ge 1 ]; then
     fi
     cd ${cwd}/fairseq
     # checkout the fairseq version to use
-    git reset --hard 0b21875e45f332bedbcc0617dcf9379d3c03855f
+    git reset --hard 3f6ba43f07a6e9e2acf957fc24e57251a7a3f55c
 
     if [ $(pip freeze | grep fairseq | wc -l ) -gt 0 ]; then
         echo "Already installed fairseq. Skip..."
